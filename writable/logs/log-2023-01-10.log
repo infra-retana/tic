@@ -1,0 +1,46 @@
+CRITICAL - 2023-01-10 09:37:00 --> Call to a member function count() on array
+#0 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-10 09:37:13 --> Call to a member function size() on array
+#0 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-10 11:22:15 --> Undefined property: stdClass::$max
+#0 /var/www/tic.soporte.com/app/Controllers/Update.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Update->niveles_componetes()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-10 11:22:18 --> Undefined property: stdClass::$max
+#0 /var/www/tic.soporte.com/app/Controllers/Update.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Update->niveles_componetes()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-10 11:22:28 --> Undefined property: stdClass::$max
+#0 /var/www/tic.soporte.com/app/Controllers/Update.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Update->niveles_componetes()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-10 11:26:42 --> str_shuffle() expects exactly 1 argument, 3 given
+#0 /var/www/tic.soporte.com/app/Controllers/Update.php(29): str_shuffle()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Update->niveles_componetes()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-10 11:36:38 --> Class "App\Controllers\BolsaModel" not found
+#0 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Update->niveles_componetes()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

@@ -1,0 +1,18 @@
+CRITICAL - 2023-01-05 15:46:33 --> Too few arguments to function App\Controllers\Home::newemployee(), 0 passed in /var/www/tic.soporte.com/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Home->newemployee()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-05 15:46:48 --> Class "App\Controllers\AreaModel" not found
+#0 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Home->newemployee()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-05 15:47:25 --> Class "App\Models\LocalidadModel" not found
+#0 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Home->newemployee()
+#1 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

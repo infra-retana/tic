@@ -1,0 +1,7 @@
+2022-12-21 08:48:52.926 [info] update#setState idle
+2022-12-21 08:48:56.388 [info] UtilityProcess<1>: Creating new...
+2022-12-21 08:48:56.465 [info] UtilityProcess<1>: received spawn event.
+2022-12-21 08:49:22.929 [info] update#setState checking for updates
+2022-12-21 08:49:22.931 [info] update#setState idle
+2022-12-21 08:49:42.376 [info] UtilityProcess<1>: received exit event with code 0.
+2022-12-21 08:49:42.376 [info] Extension host with pid 10754 exited with code: 0, signal: .

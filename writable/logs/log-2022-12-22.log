@@ -1,0 +1,115 @@
+CRITICAL - 2022-12-22 14:04:54 --> Too few arguments to function App\Controllers\Home::components(), 0 passed in /srv/CodeIgniter/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 14:05:02 --> Too few arguments to function App\Controllers\Home::components(), 0 passed in /srv/CodeIgniter/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 14:10:26 --> Too few arguments to function App\Controllers\Home::components(), 0 passed in /srv/CodeIgniter/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 14:18:05 --> Call to undefined method App\Models\ImpresoraModel::findId
+#0 /srv/CodeIgniter/app/Controllers/Home.php(25): CodeIgniter\Model->__call()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-12-22 14:54:23 --> Too few arguments to function App\Controllers\Home::components(), 0 passed in /srv/CodeIgniter/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 14:54:24 --> Too few arguments to function App\Controllers\Home::components(), 0 passed in /srv/CodeIgniter/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 15:04:19 --> Too few arguments to function App\Controllers\Home::components(), 0 passed in /srv/CodeIgniter/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 15:08:01 --> Too few arguments to function App\Controllers\Home::components(), 0 passed in /srv/CodeIgniter/system/CodeIgniter.php on line 825 and exactly 1 expected
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 16:49:09 --> Undefined variable $model
+#0 /srv/CodeIgniter/app/Controllers/Home.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-12-22 16:49:20 --> Undefined variable $model
+#0 /srv/CodeIgniter/app/Controllers/Home.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-12-22 17:08:55 --> Class "App\Controllers\componenteModel" not found
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 17:09:21 --> Class "App\Controllers\ComponenteModel" not found
+#0 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#5 {main}
+CRITICAL - 2022-12-22 17:11:13 --> Call to undefined method App\Models\ComponenteModel::count
+#0 /srv/CodeIgniter/app/Controllers/Home.php(26): CodeIgniter\Model->__call()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-12-22 17:11:23 --> Call to undefined method App\Models\ComponenteModel::size
+#0 /srv/CodeIgniter/app/Controllers/Home.php(26): CodeIgniter\Model->__call()
+#1 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#2 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#6 {main}
+CRITICAL - 2022-12-22 17:22:54 --> Undefined variable $component
+#0 /srv/CodeIgniter/app/Views/printer-components.php(7): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /srv/CodeIgniter/system/View/View.php(210): include('...')
+#2 /srv/CodeIgniter/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /srv/CodeIgniter/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /srv/CodeIgniter/app/Controllers/Home.php(28): view()
+#5 /srv/CodeIgniter/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#6 /srv/CodeIgniter/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /srv/CodeIgniter/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /srv/CodeIgniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /srv/CodeIgniter/system/Commands/Server/rewrite.php(43): require_once('...')
+#10 {main}

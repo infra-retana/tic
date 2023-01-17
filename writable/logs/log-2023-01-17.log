@@ -1,0 +1,48 @@
+CRITICAL - 2023-01-17 10:29:09 --> Undefined variable $localidades
+#0 /var/www/tic.soporte.com/app/Views/new-printer.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/tic.soporte.com/system/View/View.php(210): include('...')
+#2 /var/www/tic.soporte.com/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/tic.soporte.com/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/tic.soporte.com/app/Controllers/Home.php(283): view()
+#5 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Home->newprinter()
+#6 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-17 11:04:45 --> Cannot add or update a child row: a foreign key constraint fails (`impresoras`.`impresoras`, CONSTRAINT `impresoras_ibfk_1` FOREIGN KEY (`id_marca`) REFERENCES `marcas` (`id`))
+CRITICAL - 2023-01-17 11:04:45 --> Cannot add or update a child row: a foreign key constraint fails (`impresoras`.`impresoras`, CONSTRAINT `impresoras_ibfk_1` FOREIGN KEY (`id_marca`) REFERENCES `marcas` (`id`))
+#0 /var/www/tic.soporte.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/tic.soporte.com/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/tic.soporte.com/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/tic.soporte.com/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/tic.soporte.com/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/tic.soporte.com/system/BaseModel.php(738): CodeIgniter\Model->doInsert()
+#6 /var/www/tic.soporte.com/system/Model.php(625): CodeIgniter\BaseModel->insert()
+#7 /var/www/tic.soporte.com/app/Controllers/Storage.php(102): CodeIgniter\Model->insert()
+#8 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Storage->store_printer()
+#9 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-17 15:27:13 --> Undefined property: stdClass::$id
+#0 /var/www/tic.soporte.com/app/Views/orders.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/tic.soporte.com/system/View/View.php(210): include('...')
+#2 /var/www/tic.soporte.com/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/tic.soporte.com/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/tic.soporte.com/app/Controllers/Home.php(197): view()
+#5 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Home->orders()
+#6 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-17 15:33:11 --> Table 'impresoras.detalle_pedido' doesn't exist
+CRITICAL - 2023-01-17 15:33:11 --> Table 'impresoras.detalle_pedido' doesn't exist
+#0 /var/www/tic.soporte.com/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/tic.soporte.com/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/tic.soporte.com/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/tic.soporte.com/app/Controllers/Home.php(292): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/tic.soporte.com/system/CodeIgniter.php(825): App\Controllers\Home->orderdetail()
+#5 /var/www/tic.soporte.com/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/tic.soporte.com/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/tic.soporte.com/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
