@@ -1,0 +1,53 @@
+CRITICAL - 2023-01-23 16:21:23 --> foreach() argument must be of type array|object, null given
+#0 /var/www/soporte/app/Controllers/Home.php(258): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-23 16:25:21 --> foreach() argument must be of type array|object, null given
+#0 /var/www/soporte/app/Controllers/Home.php(258): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-23 16:29:58 --> foreach() argument must be of type array|object, null given
+#0 /var/www/soporte/app/Controllers/Home.php(258): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-23 16:33:21 --> foreach() argument must be of type array|object, null given
+#0 /var/www/soporte/app/Controllers/Home.php(258): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-23 16:37:10 --> foreach() argument must be of type array|object, null given
+#0 /var/www/soporte/app/Controllers/Home.php(258): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-23 16:38:41 --> foreach() argument must be of type array|object, null given
+#0 /var/www/soporte/app/Views/shoppingbag.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/View/View.php(210): include('...')
+#2 /var/www/soporte/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/soporte/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/soporte/app/Controllers/Home.php(294): view()
+#5 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#6 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-23 16:41:26 --> Undefined variable $cuerpoCorreo
+#0 /var/www/soporte/app/Controllers/Home.php(286): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->bag()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

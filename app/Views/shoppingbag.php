@@ -22,6 +22,18 @@
                 echo form_input($data);
             ?>
         </div>
+        <div class="card-header">
+            <b>Asunto:</b>
+            <?php
+                $data = [
+                    'type' => 'text',
+                    'name' => 'asunto', 
+                    'value' => $asunto,
+                    'class' => 'form-control mt-2'
+                ];
+                echo form_input($data);
+            ?>
+        </div>
         <div class="card-body">
             <pre><?= $cuerpo ?></pre>
         </div>
@@ -39,7 +51,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach($bag as $serie => $items){ ?> 
+            <?php if(isset($bag)) foreach($bag as $serie => $items){ ?> 
                 <?php foreach($items as $item) { ?> 
                     <tr>
                         <td><?= $item["id"] ?></td>
@@ -51,7 +63,9 @@
                         <td> 
                             <form action="/index.php/Delete/bagitem" method="POST">
                                 <input type="hidden" name="id" value="<?= $item["id"] ?>">
-                                <button type="submit" class="btn btn-sm btn-danger"> Eliminar </button>
+                                <button type="submit" class="btn btn-sm btn-danger"> 
+                                    <i class="fa fa-xmark"></i>
+                                </button>
                             </form>    
                         </td>
                     </tr>   

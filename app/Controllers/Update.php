@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\BolsaModel;
+use App\Models\PedidoModel;
 use App\Models\EmpleadoModel;
 use App\Models\ImpresoraModel;
 use App\Models\ItemBolsaModel;
@@ -17,8 +18,15 @@ class Update extends BaseController
 
         $db = db_connect();
         $niveles = "";
-        $xpedido = isset($_POST['btn_bag']);
         $id_bolsa = null;
+
+        $xpedido = isset($_POST['btn_bag']);
+        $xdrop = isset($_POST['btn_delete']);
+
+        if($xdrop){
+            $modelItem = new ComponenteModel();
+            $modelItem->where("id",$_POST['btn_delete'])->delete();
+        }
 
         if($xpedido){
             //VER SI HAY BOLSA CREADA
@@ -113,6 +121,19 @@ class Update extends BaseController
         $model->update($id_empleado,$empleado);
 
         return redirect()->to('//edit-employee//' . $id_empleado);
+
+    }
+
+    public function codigo_entrega(){
+        if(isset($_POST['codigo'])){
+            $pedido['codigo_entrega'] = $_POST['codigo'];
+            $id = $_POST['id_pedido'];
+            $model = new PedidoModel();
+            
+            $model->update($id,$pedido);
+        }
+
+        return redirect()->back();
 
     }
 

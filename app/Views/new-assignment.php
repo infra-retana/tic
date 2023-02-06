@@ -6,7 +6,7 @@
         <h3><?= $empleado->codigo . " - " . $empleado->nombre ?></h3>
     </div>
 
-    <form action="<?= '/Home/newassignment/' . $empleado->id ?>" method="POST">
+    <form action="<?= '/index.php/Home/newassignment/' . $empleado->id ?>" method="POST">
         <label for="search" class="mb-2">Buscador:</label>
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1"><i class='fa fa-search'></i></span>
@@ -22,7 +22,7 @@
 
     <?php }?>
 
-    <form method="POST" action="/Storage/store_assignment">
+    <form method="POST" action="/index.php/Storage/store_assignment" enctype='multipart/form-data'>
         <input type="hidden" name="empleado" value="<?= $empleado->id ?>">
         
         <div class="row">
@@ -77,9 +77,15 @@
                     <?php } ?>
                 </select>
             </div>
-            <div class="col-12 form-group mt-4">
+            <div class="col-6 form-group mt-4">
                 <label for="telefono">Comentario:</label>
                 <textarea name="comentario" cols="30" rows="3" class="form-control mt-2"></textarea>
+            </div>
+            <div class="col-6 form-group mt-4">
+                <label for="telefono">Adjuntar fotografia:</label>
+                <div class="input-group mt-2">
+                    <input type="file" class="form-control" name="foto_entrega" id="inputGroupFile02">
+                </div>
             </div>
             <div class="col-12 mt-4">
                 <button class="btn btn-secondary">Cancelar</button>

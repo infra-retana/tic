@@ -6,7 +6,7 @@
         <h3></h3>
     </div>
 
-    <form action="Storage/store_employee" class="" method="POST">
+    <form action="/index.php/Storage/store_employee" class="" method="POST">
         <div class="row">
             <div class="col-9 mt-2">
                 <div class="form-group">

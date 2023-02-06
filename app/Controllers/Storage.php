@@ -2,14 +2,17 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\Controller;
 use App\Models\EmpleadoModel;
 use App\Models\ImpresoraModel;
 use App\Models\AsignacionModel;
 use App\Models\ComponenteModel;
 use App\Models\InstrumentoModel;
+use App\Controllers\BaseController;
 
 class Storage extends BaseController
 {
+   
 
     public function store_assignment(){
         $db = db_connect();
@@ -18,8 +21,21 @@ class Storage extends BaseController
         $id_modalidad = $_POST["modalidad"];
         $id_estado = $_POST["estado"];
         $comentario = $_POST["comentario"];
+        $foto_entrega = $_FILES["foto_entrega"];
 
-        $nombre = $_POST["nombre"];
+        //d($foto_entrega);
+        $config['upload_path']          = './uploads/';
+        $config['allowed_types']        = 'jpg|png';
+        $config['max_size']             = 1000;
+        $config['max_width']            = 1024;
+        $config['max_height']           = 768;
+
+        $this->upload->initialize($config);
+        //$this->load->library("upload",$config);
+        $data = array('upload_data' => $this->upload->data());
+        d($data);
+
+        /*$nombre = $_POST["nombre"];
         $tipo = $_POST["tipo"];
         $modelo = $_POST["modelo"];
         $noserie = $_POST["noserie"];
@@ -65,7 +81,7 @@ class Storage extends BaseController
         $modeloAsignacion->insert($asignacion);
         
         return redirect()->to('//assignments//' . $id_empleado);
-
+*/
     }
 
 
@@ -102,6 +118,24 @@ class Storage extends BaseController
         $model->insert($printer);
 
         return redirect()->to("//printers//");
+    }
+
+
+    public function store_component(){
+        $db = db_connect();
+
+        $componente['id_tipo_componente'] = $_POST['tipo'];
+        $componente['id_color'] = $_POST['color'];
+        $componente['id_impresora'] = $_POST['id_impresora'];
+        $componente['modelo'] = $_POST['modelo'];
+        $componente['nivel'] = 0;
+        $componente['actualizacion_nivel'] = date('Y-m-d');
+
+        $model = new ComponenteModel();
+        $model->insert($componente);
+
+        return redirect()->back();
+
     }
 
 }

@@ -5,16 +5,16 @@
         <h1>Pedidos de Suministros CYC </h1>
         <div class="row mt-4">
             <div class="col-9">
-                <form action="/Home/" method="GET">
+                <form action="/index.php/Home/orders" method="GET">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class='fa fa-search'></i></span>
-                        <input type="text" name="search" class="form-control" placeholder="Criterios de busqueda [Fecha, NoSerie]" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" name="search" class="form-control" placeholder="Criterios de busqueda [Codigo de entrega]" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </form>
             </div>
             <div class="col-3">
                 <a href="<?= url_to("\App\Controllers\Home::bag") ?>" class="btn btn-success btn-block"> 
-                    <i class="fa fa-add"></i> Ver bolsa <?= "(" . $items . ")" ?>
+                    <i class="fa-solid fa-bag-shopping mx-2"></i> Ver bolsa <?= "(" . $items . ")" ?>
                 </a>
             </div>
         </div>
@@ -43,7 +43,9 @@
                         <?php if($or->fecha_entrega == null) { ?>
                             <a href="#" class="btn btn-primary btn-sm">Complementar</a>
                         <?php } else { ?> 
-                            <a href="<?= "/index.php/orders/detail/" . $or->id ?>" class="btn btn-primary btn-sm">Ver</a>
+                            <a href="<?= "/index.php/orders/detail/" . $or->id ?>" class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-bars-staggered"></i> Detalles
+                            </a>
                         <?php } ?>
                     </td>
                 </tr>

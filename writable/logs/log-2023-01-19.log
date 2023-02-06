@@ -1,0 +1,86 @@
+CRITICAL - 2023-01-19 14:56:51 --> Controller or its method is not found: \App\Controllers\Home::new-component
+#0 /var/www/soporte/system/Helpers/url_helper.php(535): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound()
+#1 /var/www/soporte/app/Views/printer-components.php(50): url_to()
+#2 /var/www/soporte/system/View/View.php(210): include('...')
+#3 /var/www/soporte/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /var/www/soporte/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /var/www/soporte/app/Controllers/Home.php(51): view()
+#6 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#7 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-19 14:57:03 --> Controller or its method is not found: \App\Controllers\Home::newcomponent
+#0 /var/www/soporte/system/Helpers/url_helper.php(535): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound()
+#1 /var/www/soporte/app/Views/printer-components.php(50): url_to()
+#2 /var/www/soporte/system/View/View.php(210): include('...')
+#3 /var/www/soporte/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /var/www/soporte/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /var/www/soporte/app/Controllers/Home.php(51): view()
+#6 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#7 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-19 14:57:40 --> Controller or its method is not found: \App\Controllers\Home::newcomponent
+#0 /var/www/soporte/system/Helpers/url_helper.php(535): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound()
+#1 /var/www/soporte/app/Views/printer-components.php(50): url_to()
+#2 /var/www/soporte/system/View/View.php(210): include('...')
+#3 /var/www/soporte/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /var/www/soporte/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /var/www/soporte/app/Controllers/Home.php(51): view()
+#6 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#7 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-19 14:57:49 --> Controller or its method is not found: \App\Controllers\Home::newcomponent
+#0 /var/www/soporte/system/Helpers/url_helper.php(535): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound()
+#1 /var/www/soporte/app/Views/printer-components.php(50): url_to()
+#2 /var/www/soporte/system/View/View.php(210): include('...')
+#3 /var/www/soporte/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /var/www/soporte/system/Common.php(1089): CodeIgniter\View\View->render()
+#5 /var/www/soporte/app/Controllers/Home.php(51): view()
+#6 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->components()
+#7 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-19 15:18:25 --> Class "App\Controllers\TiposComponenteModel" not found
+#0 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->newcomponent()
+#1 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-19 15:18:37 --> Undefined variable $id_impresora
+#0 /var/www/soporte/app/Views/new-component.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/View/View.php(210): include('...')
+#2 /var/www/soporte/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /var/www/soporte/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /var/www/soporte/app/Controllers/Home.php(310): view()
+#5 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Home->newcomponent()
+#6 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-19 16:45:39 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 /var/www/soporte/system/Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 /var/www/soporte/system/BaseModel.php(963): CodeIgniter\Model->doDelete()
+#2 /var/www/soporte/app/Controllers/Update.php(28): CodeIgniter\BaseModel->delete()
+#3 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Update->niveles_componetes()
+#4 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-19 16:46:26 --> Call to a member function delete() on null
+#0 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Update->niveles_componetes()
+#1 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-19 16:48:37 --> Call to undefined method App\Entities\Impresora::delete()
+#0 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Update->niveles_componetes()
+#1 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

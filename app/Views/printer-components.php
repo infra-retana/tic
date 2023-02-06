@@ -21,6 +21,7 @@
                     <th>Ult. Fecha Actualización</th>
                     <th>Ult. Fecha Instalación</th>
                     <th>Nivel</th>
+                    <th>Opciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,11 +34,12 @@
                             <td class="fit"> <?= $component->modelo ?> </td>
                             <td> <?= $component->actualizacion_nivel ?> </td>
                             <td> <?= $component->fecha_instalacion ?> </td>
-                            
                             <td>
                                 <input type="text" name="<?= "nivel_" . $component->id  ?>" class="form-control" value="<?= $component->nivel ?>" disabled>     
                             </td>
-                            
+                            <td>
+                                <button class="btn btn-danger btn-sm" name="btn_delete" value="<?= $component->id ?>"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
                         </tr>
                     <?php } ?>
                 
@@ -45,7 +47,7 @@
         </table>
         <div class="row">
             <div class="col-12">
-                <button class="btn btn-primary">Editar</button>
+                <a href="<?= url_to("\App\Controllers\Home::newcomponent",$impresora->id) ?>" class="btn btn-primary">Agregar Componente</a>
                 <button class="btn btn-success" type="button" name="btn_levels" value="levels" onclick="submitform()">Actualizar Niveles</button>
                 <button class="btn btn-warning" type="submit" name="btn_bag" value="bag">Añadir a bolsa de pedido</button>
             </div>

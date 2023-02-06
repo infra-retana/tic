@@ -6,7 +6,7 @@
 
         <div class="row mt-4">
             <div class="col-9">
-                <form action="/Home/printers" method="GET">
+                <form action="/index.php/Home/printers" method="GET">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class='fa fa-search'></i></span>
                         <input type="text" name="search" class="form-control" placeholder="Criterios de busqueda [Localidad, No.Serie]" aria-label="Username" aria-describedby="basic-addon1">
@@ -23,7 +23,10 @@
 
         <div class="row mt-4">
             <div class="col-12">
-                <a href="<?= url_to("\App\Controllers\Home::newprinter") ?>" class="btn btn-sm btn-success">Crear Nueva Impresora</a>
+                <a href="<?= url_to("\App\Controllers\Home::newprinter") ?>" class="btn btn-sm btn-success">
+                    <i class="fa-solid fa-print mx-2"></i>    
+                    Crear Nueva Impresora
+                </a>
             </div>
         </div>
     </div>

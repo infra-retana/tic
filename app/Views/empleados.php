@@ -5,7 +5,7 @@
         <h1>Lista de empleados</h1>
         <div class="row mt-4">
             <div class="col-9">
-                <form action="/Home/assignments" method="GET">
+                <form action="/index.php/Home/assignments" method="GET">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class='fa fa-search'></i></span>
                         <input type="text" name="search" class="form-control" placeholder="Criterios de busqueda [Codigo, Nombre]" aria-label="Username" aria-describedby="basic-addon1">
@@ -14,7 +14,7 @@
             </div>
             <div class="col-3">
                 <a href="<?= url_to("\App\Controllers\Home::newemployee") ?>" class="btn btn-success btn-block"> 
-                    <i class="fa fa-add"></i> Nuevo Empleado
+                    <i class="fa-solid fa-user-plus mx-2"></i> Nuevo Empleado
                 </a>
             </div>
         </div>

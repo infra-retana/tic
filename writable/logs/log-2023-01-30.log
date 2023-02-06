@@ -1,0 +1,123 @@
+CRITICAL - 2023-01-30 14:17:25 --> Undefined array key "foto_entrega"
+#0 /var/www/soporte/app/Controllers/Storage.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 14:17:52 --> Undefined variable $_FILE
+#0 /var/www/soporte/app/Controllers/Storage.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 14:27:17 --> Call to undefined method App\Controllers\Storage::load()
+#0 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#1 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-30 14:27:41 --> Undefined property: App\Controllers\Storage::$load
+#0 /var/www/soporte/app/Controllers/Storage.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 14:29:05 --> Undefined property: App\Controllers\Storage::$load
+#0 /var/www/soporte/app/Controllers/Storage.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(802): App\Controllers\Storage->__construct()
+#2 /var/www/soporte/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 14:30:28 --> Class "App\Controllers\CI_Controller" not found
+#0 /var/www/soporte/system/Router/Router.php(518): include_once()
+#1 /var/www/soporte/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#2 /var/www/soporte/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#3 /var/www/soporte/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#4 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-30 14:40:24 --> Undefined property: App\Controllers\Storage::$load
+#0 /var/www/soporte/app/Controllers/Storage.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(802): App\Controllers\Storage->__construct()
+#2 /var/www/soporte/system/CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 14:45:08 --> Undefined property: App\Controllers\Storage::$upload
+#0 /var/www/soporte/app/Controllers/Storage.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 15:10:15 --> Undefined property: App\Controllers\Storage_model::$upload
+#0 /var/www/soporte/app/Controllers/Storage_model.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage_model->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 15:10:49 --> Class "App\Controllers\CI_Model" not found
+#0 /var/www/soporte/system/Router/Router.php(518): include_once()
+#1 /var/www/soporte/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#2 /var/www/soporte/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#3 /var/www/soporte/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#4 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-30 15:20:55 --> Undefined property: App\Controllers\Storage::$upload
+#0 /var/www/soporte/app/Controllers/Storage.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 15:26:13 --> Class "App\Controllers\CI_Controller" not found
+#0 /var/www/soporte/system/Router/Router.php(518): include_once()
+#1 /var/www/soporte/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#2 /var/www/soporte/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#3 /var/www/soporte/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#4 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-30 15:26:30 --> Class "App\Controllers\CI_Controller" not found
+#0 /var/www/soporte/system/Router/Router.php(518): include_once()
+#1 /var/www/soporte/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#2 /var/www/soporte/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#3 /var/www/soporte/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#4 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-30 15:27:42 --> Undefined property: App\Controllers\Storage::$upload
+#0 /var/www/soporte/app/Controllers/Storage.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 15:29:48 --> Class "App\Controllers\CI_Controller" not found
+#0 /var/www/soporte/system/Router/Router.php(518): include_once()
+#1 /var/www/soporte/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute()
+#2 /var/www/soporte/system/CodeIgniter.php(719): CodeIgniter\Router\Router->handle()
+#3 /var/www/soporte/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt()
+#4 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-01-30 15:31:24 --> Undefined property: App\Controllers\Storage::$upload
+#0 /var/www/soporte/app/Controllers/Storage.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-01-30 15:33:12 --> Undefined property: App\Controllers\Storage::$upload
+#0 /var/www/soporte/app/Controllers/Storage.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/soporte/system/CodeIgniter.php(825): App\Controllers\Storage->store_assignment()
+#2 /var/www/soporte/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/soporte/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/soporte/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

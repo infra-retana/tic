@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://tic.soporte.com';
+    public $baseURL = 'http://localhost';
 
     /**
      * --------------------------------------------------------------------------

@@ -46,6 +46,7 @@ $routes->get('/orders','Home::orders');
 $routes->get('/shoppingbag','Home::bag');
 $routes->get('/new-printer','Home::newprinter');
 $routes->get('/orders/detail/(:num)','Home::orderdetail/$1');
+$routes->get("/new-component/(:num)",'Home::newcomponent/$1');
 
 /*
  * --------------------------------------------------------------------

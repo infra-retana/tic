@@ -4,7 +4,9 @@ namespace App\Controllers;
 
 use App\Models\AreaModel;
 use App\Models\CargoModel;
+use App\Models\ColorModel;
 use App\Models\MarcaModel;
+use App\Models\PedidoModel;
 use App\Models\EmpleadoModel;
 use App\Models\ImpresoraModel;
 use App\Models\ItemBolsaModel;
@@ -13,6 +15,7 @@ use App\Models\AsignacionModel;
 use App\Models\ComponenteModel;
 use App\Models\InstrumentoModel;
 use App\Controllers\BaseController;
+use App\Models\TiposComponenteModel;
 
 class Home extends BaseController
 {
@@ -26,7 +29,7 @@ class Home extends BaseController
         $db = db_connect();
 
         if(!isset($_GET['search'])){
-            $query = "select * from stock_impresoras";
+            $query = "select * from stock_impresoras order by marca";
             $result = $db->query($query)->getResult();
             $data['impresoras'] = $result;
         }else{
@@ -188,9 +191,18 @@ class Home extends BaseController
 
     public function orders(){
         $db = db_connect();
-        $query = "select * from items_pedido";
+        $result = null;
+
+        if(isset($_GET['search'])){
+            $search = $_GET['search'];
+            $query = "select * from items_pedido where codigo_entrega = ?";
+            $result = $db->query($query,[$search])->getResult();
+        }else{
+            $query = "select * from items_pedido";
+            $result = $db->query($query)->getResult();
+        }
+
         $query1 = "select count(*) as items from item_bolsa";
-        $result = $db->query($query)->getResult();
         $result1 = $db->query($query1)->getResult();
         $data['pedidos'] = $result;
         $data['items'] = $result1[0]->items;
@@ -216,6 +228,7 @@ class Home extends BaseController
 
         $itembolsa = new ItemBolsaModel();
         $items = $itembolsa->findAll();
+        $n = sizeof($items);
 
         $bag = null;
 
@@ -223,10 +236,7 @@ class Home extends BaseController
             $noserie = $it->serie_impresora;
             $query3 = "select * from detalle_componentes where id_componente = ?";
             $result3 = $db->query($query3,[$it->id_componente])->getResult()[0];
-            /*$cuerpoCorreo .= $result3->tipo_componente . " " . $result3->modelo_componente . " " . $result3->color_componente . " ";
-            $cuerpoCorreo .= " para el impresor modelo " . $result3->modelo_impresora . " con numero de serie " . $result3->serie_impresora;
-            $cuerpoCorreo .= "\n\n";*/
-
+            
             $bag[$result3->serie_impresora][$it->id_componente] = [
                 "id" => $result3->id_componente, 
                 "nivel" => $result3->nivel_componente, 
@@ -238,37 +248,50 @@ class Home extends BaseController
 
         }
 
-        $cuerpoCorreo = "Buen dia.\n";
-        $cuerpoCorreo .= "Favor de enviar los siguientes suministros: ";
-        $cuerpoCorreo .= "\n\n";
+        $cuerpoCorreo = "";
 
-        foreach($bag as $serie => $items){
-            $model = new ImpresoraModel();
-            $model_loc = new LocalidadModel();
-            $impresora = $model->where("no_serie",$serie)->first();
+        if(isset($bag)){
 
-            $cuerpoCorreo .= "+ Para la impresora modelo " . $impresora->modelo;
-            $cuerpoCorreo .= " con numero de serie " . $serie;
-            $cuerpoCorreo .= " ubicada en la localidad de ";
-            $cuerpoCorreo .= $model_loc->find($impresora->id_localidad)->localidad;
-            $cuerpoCorreo .= "";
+            $cuerpoCorreo = "Buen dia.\n";
+            $cuerpoCorreo .= "Solicitamos de favor de enviar los siguientes suministros: ";
+            $cuerpoCorreo .= "\n\n";
 
-            foreach($items as $item){
-                $cuerpoCorreo .= "\n\t - " . $item["tipo"] . " ";
-                $cuerpoCorreo .= $item["modelo"] . " " . $item["color"] . ", nivel: " . $item["nivel"] . "%";
+            foreach($bag as $serie => $items){
+                $model = new ImpresoraModel();
+                $model_loc = new LocalidadModel();
+                $impresora = $model->where("no_serie",$serie)->first();
+
+                $cuerpoCorreo .= "+ Para la impresora modelo " . $impresora->modelo;
+                $cuerpoCorreo .= " con numero de serie " . $serie;
+                $cuerpoCorreo .= " ubicada en la localidad de ";
+                $cuerpoCorreo .= $model_loc->find($impresora->id_localidad)->localidad;
+                $cuerpoCorreo .= "";
+
+                foreach($items as $item){
+                    $cuerpoCorreo .= "\n\t - " . $item["tipo"] . " ";
+                    $cuerpoCorreo .= $item["modelo"] . " " . $item["color"] . ", nivel: " . $item["nivel"] . "%";
+                }
+
+
+                $cuerpoCorreo .= "\n\n";
             }
 
+            $cuerpoCorreo .= "Se adjuntan los documentos correspondientes";
+            $cuerpoCorreo .= "\nAtt.";
 
-            $cuerpoCorreo .= "\n\n";
+        }else{
+            $cuerpoCorreo .= "No hay elementos en la bolsa";
         }
 
-        $cuerpoCorreo .= "Att.";
+        
+        $asunto = "Solicitud de suministros - - " . date("Y-m-d");
+        
 
 
-
+        $data['asunto'] = $asunto;
         $data["correos"] = $correos;
         $data["cuerpo"] = $cuerpoCorreo;
-        $data["n_items"] = sizeof($items);
+        $data["n_items"] = $n;
         $data["bag"] = $bag;
         
         return view('shoppingbag',$data);
@@ -290,11 +313,26 @@ class Home extends BaseController
         $db = db_connect();
         $query = "select * from detalle_pedidos where id_pedido = ?";
         $result = $db->query($query,[$id])->getResult();
+        $model = new PedidoModel();
+        $pedido = $model->find($id); 
 
         $data['detalle'] = $result;
-
+        $data['id_pedido'] = $id;
+        $data['codigo_entrega'] = $pedido->codigo_entrega;
 
         return view('detail-order',$data);
+    }
+
+    public function newcomponent($id){
+        $db = db_connect();
+        $colorModel = new ColorModel();
+        $tiposComponente = new TiposComponenteModel();
+
+        $data['colores'] = $colorModel->findAll();
+        $data['tipos'] = $tiposComponente->findAll();
+        $data['id_impresora'] = $id;
+    
+        return view("new-component",$data);
     }
 
 }
